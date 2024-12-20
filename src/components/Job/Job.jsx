@@ -1,0 +1,18 @@
+
+import PropTypes from 'prop-types';
+
+const Job = ({job}) => {
+  const {logo} = job;
+  console.log(logo);
+  return (
+    <div>
+      <img src={logo} alt="" />
+    </div>
+  );
+};
+
+Job.propTypes = {
+  job: PropTypes.object
+};
+
+export default Job;
